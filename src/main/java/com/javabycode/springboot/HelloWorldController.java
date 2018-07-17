@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloWorldController {
     @RequestMapping("/hello")
-    public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World1") String name) {
+    public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World2") String name) {
         
         String message="You just create Spring Boot Example successfully";
         model.addAttribute("name", name);
